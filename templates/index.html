@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Запчасти новые и бу в Нижнем Новгороде для иномарок. Оптом и в розницу. Доставка от 3-х дней.">
+    <meta name="author" content="krozin@gmail.">
+    <meta name="keywords" content="бу-запчасти запчасти автозапчасти бу-двигатели двигатель бу-авто авто автомобили зап.части vin год-выпуска год выпуска марка агрегаты коробка bmw acura audi chery chevrolet citroen fiat fort honda hyndai iveco mazda mersedes jeep kia lexus nissan opel suzuki tayota subaru volvo zaz volkswagen">
+    <meta name="robots" content="index, nofollow">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/static/css/motors.css" rel="stylesheet">
+    <title>БУ запчасти и двигатели в Нижнем Новгороде</title>
+</head>
+
+<body>
+
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    {% if message%}
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 alert-message alert alert-info" style=" top: 20px;">    
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ message.decode('utf-8') }}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-11 hidden-sm col-md-2 col-lg-2">
+                <div class="brand"><i class="fa fa-cogs fa-lg"></i> бумоторс</div>
+            </div>
+            <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav hidden-xs" style="float: right">
+                        <li><a href="#promo">Главная</a></li>
+                        <li><a href="#order">Подробная заявка</a></li>
+                        <li><a href="#info">О компании</a></li>
+                        <li><a href="#labels">Марки авто</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav visible-xs">
+                        <li><a href="#promo">Главная</a></li>
+                        <li><a href="#order">Подробная заявка</a></li>
+                        <li><a href="#info">О компании</a></li>
+                        <li><a href="#labels">Марки авто</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="promo" class="promo">
+    <div class="container">
+        <div class="row">
+            <div class="hidden-xs col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
+                <div class="promo-header">
+                    <span style="font-size: 2.5em">Продажа контрактных</span><br>
+                    <span style="font-size: 2em">агрегатов и запчастей</span><br>
+                    <span style="font-size: 1.5em">оптом и в розницу</span>
+                </div>
+                <div class="promo-icons">
+                    <div style="margin-top: 30px; margin-bottom: 30px">
+                        <i class="fa fa-truck fa-2x" style="padding: 4px 7px 5px 4px"></i> Срок доставки 3-10 дней
+                    </div>
+                    <div style="margin-bottom: 30px">
+                        <i class="fa fa-tachometer fa-2x" style="padding: 2px 6px 5px 5px"></i> Все агрегаты тестируются
+                    </div>
+                    <div style="margin-bottom: 30px">
+                        <i class="fa fa-shield fa-2x" style="padding: 5px 10px 3px 9px"></i> Гарантия 30 дней
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+                <div class="promo-header centered">
+                    <span style="font-size: 2em">Продажа контрактных</span><br>
+                    <span style="font-size: 1.5em">агрегатов и запчастей</span><br>
+                    <span style="font-size: 1em">оптом и в розницу</span>
+                </div>
+                <div class="promo-icons">
+                    <div style="margin-top: 25px; margin-bottom: 30px">
+                        <i class="fa fa-truck fa-2x" style="padding: 4px 7px 5px 4px"></i> Срок доставки 3-10 дней
+                    </div>
+                    <div style="margin-bottom: 30px">
+                        <i class="fa fa-tachometer fa-2x" style="padding: 2px 6px 5px 5px"></i> Все агрегаты тестируются
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <i class="fa fa-shield fa-2x" style="padding: 5px 10px 3px 9px"></i> Гарантия 30 дней
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-lg-5">
+                <div class="promo-panel panel panel-default">
+                    <div class="panel-body">
+                        <span style="font-size: 1.5em">Оставьте заявку</span><br>
+                        <span>И узнайте стоимость и наличие<br>Вашего двигателя</span><br><br>
+                        <form action="/req" method="post">
+                            <div class="promo-panel-inputs">
+                                <input type="text" class="form-control" placeholder="Марка и модель авто" name=model>
+                                <input type="text" class="form-control" placeholder="Вин код или номер кузова" name=vin>
+                                <input type="text" class="form-control" placeholder="Номер телефона" name=tel>
+                                <input type="submit" class="btn btn-primary btn-lg"
+                                       style="text-transform: uppercase; width: 100%"
+                                       value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="promo-second" class="promo-second">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-rub fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Низкая цена</h4>
+                </div>
+                <div>
+                    <span>У нас одни из самых низких цен на территории РФ</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-money fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Система скидок</h4>
+                </div>
+                <div>
+                    <span>Чем больше Вы покупаете, тем лучше цены для Вас</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-truck fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Отгрузка товара</h4>
+                </div>
+                <div>
+                    <span>Наши менеджеры оперативно быстро подготовят Вам весь комплект сопроводительных документов</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-ship fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Доставка товара</h4>
+                </div>
+                <div>
+                    <span>Наша система логистики полностью решает проблему доставки товара от нашего оптового склада до склада клиента в любом регионе</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-bullhorn fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Ответ на вопрос</h4>
+                </div>
+                <div>
+                    <span>Каждый обратившийся клиент может рассчитывать на бесплатные квалифицированные консультации наших менеджеров</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 promo-second-item">
+                <div style="color: #1D76BB; margin-bottom: 20px">
+                    <i class="fa fa-shield fa-5x"></i>
+                </div>
+                <div style="text-transform: uppercase">
+                    <h4>Гарантия</h4>
+                </div>
+                <div>
+                    <span>На всю свою продукцию мы предоставляем гарантию 30 дней</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="order" class="order" style="background: #f0f0f0">
+    <div class="container">
+        <h3 class="text-center"><strong>Подробная заявка</strong></h3>
+        <p class="text-center">Заполните форму и узнайте точную цену</p>
+        <hr>
+        <div class="order-panel-inputs">
+            <form action="/full_order_reqest" method="post">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="mark">Марка:</label>
+                        <select id="mark" name="mark" class="form-control">
+                            <option value="">Выберите марку автомобиля</option>
+                            <option value="acura">Acura</option>
+                            <option value="alfa_romeo">Alfa Romeo</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="byd">BYD</option>
+                            <option value="cadillac">Cadillac</option>
+                            <option value="chery">Chery</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="citroen">Citroen</option>
+                            <option value="dacia">Dacia</option>
+                            <option value="daewoo">Daewoo</option>
+                            <option value="daf">Daf</option>
+                            <option value="daihatsu">Daihatsu</option>
+                            <option value="dodge">Dodge</option>
+                            <option value="diat">Fiat</option>
+                            <option value="dord">Ford</option>
+                            <option value="geely">Geely</option>
+                            <option value="great_wall">Great Wall</option>
+                            <option value="hafei">Hafei</option>
+                            <option value="honda">Honda</option>
+                            <option value="hummer">Hummer</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="infiniti">Infiniti</option>
+                            <option value="isuzu">Isuzu</option>
+                            <option value="iveco">Iveco</option>
+                            <option value="jaguar">Jaguar</option>
+                            <option value="jeep">Jeep</option>
+                            <option value="kia">Kia</option>
+                            <option value="land_rover">Land Rover</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="mercedes-Benz">Mercedes-Benz</option>
+                            <option value="mini">Mini</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="opel">Opel</option>
+                            <option value="peugeot">Peugeot</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="renault">Renault</option>
+                            <option value="renault_trucks">Renault Trucks</option>
+                            <option value="rover">Rover</option>
+                            <option value="saab">Saab</option>
+                            <option value="seat">Seat</option>
+                            <option value="skoda">Skoda</option>
+                            <option value="ssang_yong">Ssang Yong</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="talbot">Talbot</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="vauxhall">Vauxhall</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="zaz">Zaz</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="model">Модель:</label>
+                        <input id="model" name="model" type="text" class="form-control"
+                               placeholder="Укажите модель автомобиля">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="year">Год выпуска:</label>
+                        <input id="year" name="year" type="text" class="form-control"
+                               placeholder="Укажите год выпуска автомобиля">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="volume">Объем двигателя:</label>
+                        <input id="volume" name="volume" type="text" class="form-control"
+                               placeholder="Укажите объем двигателя">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="power">Мощность:</label>
+                        <input id="power" name="power" type="text" class="form-control"
+                               placeholder="Укажите мощность двигателя">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="engine">Двигатель:</label>
+                        <select id="engine" name="engine" class="form-control">
+                            <option value="">Выберите тип двигателя</option>
+                            <option value="gasoline">Бензин</option>
+                            <option value="diesel">Дизель</option>
+                            <option value="hybrid">Гибрид</option>
+                            <option value="gasoline_gas">Бензин/Газ</option>
+                            <option value="electro">Электро</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="gearbox">Коробка передач:</label>
+                        <select id="gearbox" name="gearbox" class="form-control">
+                            <option value="">Выберите тип коробки передач</option>
+                            <option value="mechanic">Механика</option>
+                            <option value="auto">Автомат</option>
+                            <option value="robot">Робот</option>
+                            <option value="variator">Вариатор</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <label for="marknotes">Маркировка (если известно):</label>
+                        <input id="marknotes" name="marknotes" type="text" class="form-control"
+                               placeholder="Укажите маркировку двигателя">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="hidden-xs hidden-sm cleared">
+                            <label for="addons">&nbsp;</label>
+                        </div>
+                        <div style="float: left">
+                            <input id="addons" name="addons" type="checkbox">
+                        </div>
+                        <div style="float: left; margin: 20px 0 0 15px">
+                            <span>С навесным оборудованием</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                        <label for="username">Имя:</label>
+                        <input id="username" name="username" type="text" class="form-control"
+                               placeholder="Укажите Ваше имя">
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                        <label for="userphone">Телефон:</label>
+                        <input id="userphone" name="userphone" type="text" class="form-control"
+                               placeholder="Укажите Ваш телефон">
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                        <label for="useremail">Email:</label>
+                        <input id="useremail" name="useremail" type="text" class="form-control"
+                               placeholder="Укажите Ваш email">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <label for="submit" class="hidden-xs hidden-sm">&nbsp;</label>
+                        <input id="submit" type="submit" class="btn btn-primary btn-lg"
+                               style="text-transform: uppercase; width: 100%"
+                               value="Отправить">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="info" class="info">
+    <div class="container">
+        <h3 class="text-center"><strong>О компании</strong></h3>
+        <hr>
+        <div>
+            <p>Компания «бумоторс» занимается продажей контрактных агрегатов и автозапчастей уже более 15 лет для всех
+                японских, европейских, корейских автомобилей, США. За это время наша фирма построила надежные
+                партнерские отношения с признанными во всем мире производителями запчастей и надежными
+                транспортно-экспедиционными компаниями.</p>
+
+            <p>С момента зарождения главной целью нашей компании было предложить нашим клиентам самый широкий спектр
+                автомобильных запасных частей, агрегатов, б/у автозапчстей и аксессуаров, а развитие интернет–технологий
+                дало возможность максимально упростить и ускорить процесс покупки для Вас.</p>
+
+            <p>Так же поставками запчастей для грузового транспорта и спецтехники. выстроена логистика по всему миру,
+                между нашими складами в Германии, Англии, Японии, Польше, Латвии, Кореи, Швейцарии, ОАЭ, США штат
+                Флорида.</p>
+
+            <p>На нашем складе в Нижнем Новгороде и Москве огромное количество б/у двигателей, КПП, кузовных деталей,
+                оптики, ходовых и других запчастей, прошедших проверку работоспособности! Мы продаем качественные
+                запчасти с высоким остаточным ресурсом.</p>
+
+            <p>Если на складе не оказалось нужное вам детали? Мы сможем привезти именно то, что Вам нужно, в самые
+                короткие сроки и по выгодной цене, до нужного вам места. Логистика выстроена таким путем: морским
+                сообщением, железнодорожным транспортом, автомобильными перевозками, а также авиаперевозками. Срок
+                доставки от 3 до 10 дней.</p>
+
+            <p>У нас вы можете найти огромный спектр двигателей, головок блока цилиндров, коробок передач, раздаточных
+                коробок передач, турбин, тнвд, масляных насосов и всего навесного обордования.</p>
+
+            <p>Компания «бумоторс» имеет собственный АвтоТехцентр, в котором проводится полный спектр услуг по ТО
+                автомобилей, диагностированию, а также установка приобретенных коробок передач и двигателей.</p>
+
+            <p>Всегда в наличии на складе нашей компании, широкий ассортимент контрактных агрегатов – более 15000
+                наименований ДВС и КПП, все агрегаты отбираются и тестируются. Тем самым исключая наличие скрытых
+                дефектов в автомобильных агрегатов. Все агрегаты проходят полное таможенное оформление и продаются уже
+                со всеми документами для постановки на учет в ГАИ или иных органов власти.</p>
+
+            <h4>Наши преимущества:</h4>
+            <ul>
+                <li>Обширный on-line каталог автозапчастей для автомобилей европейских, японских и корейских
+                    производителей. И б/у автозапчастей.
+                </li>
+                <li>Поиск интересующих деталей различными способами: запрос по VIN автомобиля, номеру запчасти,
+                    иллюстрированному каталогу, связаться с менеджером, обратная связь.
+                </li>
+                <li>В наших прайс-листах более 50 млн наименований оригинальных и неоригинальных зап.частей и
+                    аксессуаров от 1200 ведущих мировых производителей и свыше 5 тыс маркировок б/у агрегатов.
+                </li>
+                <li>Запчасти для спецавтомобилей и грузового автотранспорта.</li>
+                <li>Каждый клиент получает персонального менеджера, который отслеживает всю цепочку от размещения заказа
+                    до его приобретения.
+                </li>
+                <li>Минимальные сроки доставки заказа любым удобным для клиента способом (авто, авиа, ж/д, курьерская
+                    доставка) более чем в 300 городов страны.
+                </li>
+            </ul>
+
+            <h4>Работа с нами это:</h4>
+            <ul>
+                <li>Низкая цена. У нас одни из самых низких цен на территории РФ.</li>
+                <li>Система скидок.  Чем больше Вы покупаете, тем лучше цены для Вас!</li>
+                <li>Отгрузка товара. Наши менеджеры оперативно быстро подготовят Вам весь комплект сопроводительных
+                    документов.
+                </li>
+                <li>Доставка товара до клиента. Наша система логистики полностью решает проблему доставки товара от
+                    нашего оптового склада до склада клиента в любом регионе.
+                </li>
+                <li>Ответ на вопрос. Каждый обратившийся клиент может рассчитывать на бесплатные квалифицированные
+                    консультации наших менеджеров.
+                </li>
+                <li>На всю свою продукцию мы предоставляем гарантию 30 дней.</li>
+            </ul>
+
+            <h4>Список наших партнеров:</h4>
+            <a href="http://rmsauto.ru/">rmsauto.ru</a> - по автозапчастям. Город Нижний Новгород.
+            <br>
+            <a href="http://www.bestwayservice.ru/">bestwayservice.ru</a> - по установки агрегатов и ТО.
+
+            <h4>Остались вопросы?</h4>
+            <span>Звоните <strong>8(831)424-11-30</strong> наши менеджеры вас обязательно
+                проконсультируют. Работая с нами и
+                нашими партнерами, Вы всегда можете быть уверены в грамотном и вежливом обслуживании, профессиональности
+                наших сотрудников, быстроте и точности исполнения заказов, высоком качестве продукции. Мы будем рады
+                видеть Вас среди наших клиентов!</span>
+        </div>
+    </div>
+</div>
+
+<div id="labels" class="labels" style="background: #f0f0f0">
+    <div class="container">
+        <h3 class="text-center"><strong>Мы работаем с марками авто</strong></h3>
+        <hr>
+        <div id="cars-logos"></div>
+    </div>
+</div>
+
+<div id="contacts" class="contacts">
+    <div class="container">
+        <h3 class="text-center"><strong>Как нас найти</strong></h3>
+        <hr>
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centered contacts-section">
+                <div>
+                    <div>
+                        <i class="fa fa-map-marker fa-2x"></i>
+                    </div>
+                    <div>
+                        <span>г. Нижний Новгород,<br>ул. Электрическая, 2<br>здание "ТехОсмотр"</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centered contacts-section">
+                <div>
+                    <i class="fa fa-phone fa-2x"></i>
+                </div>
+                <div>
+                    <span>8 (831) 424-11-30</span><br>
+                    <span>8 (831) 424-11-40</span><br>
+                    <span>8 (910) 149-79-99</span><br>
+                    <span>8 (910) 149-69-99</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-centered contacts-section">
+                <div>
+                    <i class="fa fa-at fa-2x"></i>
+                </div>
+                <div>
+                    <a href="mailto:rms.ilya@mail.ru">rms.ilya@mail.ru</a><br>
+                    <a href="mailto:zip@autozap.su">zip@autozap.su</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qG-R5OWJpQ2XTaMCXAgK7R1SmyFLllzO&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true">
+    </script>
+</div>
+
+<div class="footer">
+    <nav class="navbar navbar-inverse navbar-static-bottom">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="brand"><i class="fa fa-cogs fa-lg"></i> бумоторс</div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div style="text-transform: none; color: white; margin-top: 15px;">
+                        <i class="fa fa-clock-o fa-lg"></i> Ежедневно с 10:00 до 19:00
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="tel">8 (831) 424-11-30</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/static/js/motors.js"></script>
+
+</body>
+</html>

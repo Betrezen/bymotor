@@ -1,0 +1,124 @@
+body {
+    min-width: 400px;
+    padding-top: 50px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+nav {
+    min-width: 400px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(150, 150, 150, 0.33), rgba(0, 0, 0, 0));
+}
+
+.brand {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+}
+
+.tel {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+}
+
+.promo {
+    background: #000000 url("/static/images/engine_bg.jpg") center no-repeat;
+}
+
+.promo-header {
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promo-icons {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.promo-icons i {
+    border: 2px solid #ffffff;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.promo-panel {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promo-panel .panel-body {
+    text-align: center;
+}
+
+.promo-panel-inputs {
+    line-height: 2em;
+}
+
+.promo-panel-inputs input[type=text] {
+    text-transform: uppercase;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.promo-second-item {
+    margin: 25px 0
+}
+
+.promo-second .row {
+    margin: 20px 0
+}
+
+.info {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.info h3 {
+    text-transform: uppercase;
+}
+
+.order h3 {
+    text-transform: uppercase;
+}
+
+.order-panel-inputs input, .order-panel-inputs select {
+    text-transform: uppercase;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.labels {
+    text-transform: uppercase;
+}
+
+.contacts h3 {
+    text-transform: uppercase;
+}
+
+.contacts i {
+    color: #177DC7;
+}
+
+.contacts-section {
+    margin-bottom: 15px;
+}
+
+.footer .navbar {
+    margin: 0;
+    border-radius: 0;
+}
+
+.centered {
+    text-align: center;
+}
