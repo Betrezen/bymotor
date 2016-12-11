@@ -133,7 +133,7 @@ def send_email(subj, message, toemail="bymotornn@gmail.com", fromemail="bymotorn
     msg['To'] = toemail
     username = 'bymotornn@gmail.com'
     username = 'bymotornn@mail.ru'
-    password = 'NN654321'
+    password = '99999'
 
 
     # The actual mail send
