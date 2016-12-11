@@ -182,7 +182,7 @@ def get_geo_ip(ipstr):
         match.location)
     return message, match
 
-def read_imap_email(title, user='bymotornn@gmail.com', passw='NN654321'):
+def read_imap_email(title, user='bymotornn@gmail.com', passw='99999'):
     import imapclient
     import pyzmail
     imapserver = 'imap.gmail.com'
